@@ -2,7 +2,7 @@
 
 KeyHunt is a high-performance tool for searching Bitcoin private keys using the Baby-Step Giant-Step (BSGS) algorithm. This version includes significant optimizations for modern processors, improved memory management, and flexible search settings.
 
-![ket hunt]()
+![ket hunt](https://github.com/Slait/Keyhuntbsgs/blob/main/keyhunt.png?raw=true)
 
 ## Key Features and Changes
 - **Higher speed**: Compared to the original Keyhunt, the speed is 20-40% faster for BSGS, with faster Bloom filter creation and faster Bloom filter loading.
@@ -22,7 +22,7 @@ KeyHunt is a high-performance tool for searching Bitcoin private keys using the 
 - **File Organization**: Bloom filters are now saved in a separate `filters/` folder with organized names.
 
 ## Usage
-
+![ket hunt](https://github.com/Slait/Keyhuntbsgs/blob/main/keyhunt2.png?raw=true)
 ## Disclaimer
 I created this tool as a universal tool for solving puzzles. I recommend everyone to use it ONLY for solving puzzles.
 
@@ -179,4 +179,5 @@ Correct values for n and maximum k for specific bits
 | 1792 GB | 50   | 114688     | 0x4000000000000 |
 | 1920 GB | 50   | 122880     | 0x4000000000000 |
 | 2 TB    | 50   | 131072     | 0x4000000000000 |
+
 -------------------------------------------------
