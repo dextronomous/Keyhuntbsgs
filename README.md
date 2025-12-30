@@ -21,6 +21,17 @@ KeyHunt is a high-performance tool for searching Bitcoin private keys using the 
 - **Console Output**: Optional output of WIF keys to the console (`-wif 1`).
 - **File Organization**: Bloom filters are now saved in a separate `filters/` folder with organized names.
 
+##What's added:
+1.0.3
+Deleted oldbloom
+Added saving the progress file once per minute (file save.txt)
+Added XOR and Fuse Filters. Selected via -x (bloom|xor|fuse)
+XOR FUSE filter optimization + 10 percent. Stage 1, 2, 3
+Added checked-deep.txt check. If the traversed ranges from the -D deep.txt file are in the checked-deep.txt file, then it does not check them.
+Added cleaning of the tmp folder before and after creating the FUSE and XOR filter.
+
+Attention: Be sure to recreate the filters, as they do not work from the old version.
+
 ## Usage
 ![ket hunt](https://github.com/Slait/Keyhuntbsgs/blob/main/keyhunt2.png?raw=true)
 ## Disclaimer
@@ -181,4 +192,5 @@ Correct values for n and maximum k for specific bits
 | 2 TB    | 50   | 131072     | 0x4000000000000 |
 
 -------------------------------------------------
+
 
