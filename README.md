@@ -21,7 +21,8 @@ KeyHunt is a high-performance tool for searching Bitcoin private keys using the 
 - **Console Output**: Optional output of WIF keys to the console (`-wif 1`).
 - **File Organization**: Bloom filters are now saved in a separate `filters/` folder with organized names.
 
-##What's added:
+## What's added:
+
 1.0.3
 Deleted oldbloom.
 Added saving the progress file once per minute (file save.txt).
@@ -192,6 +193,7 @@ Correct values for n and maximum k for specific bits
 | 2 TB    | 50   | 131072     | 0x4000000000000 |
 
 -------------------------------------------------
+
 
 
 
