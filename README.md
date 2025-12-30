@@ -23,10 +23,10 @@ KeyHunt is a high-performance tool for searching Bitcoin private keys using the 
 
 ##What's added:
 1.0.3
-Deleted oldbloom
-Added saving the progress file once per minute (file save.txt)
-Added XOR and Fuse Filters. Selected via -x (bloom|xor|fuse)
-XOR FUSE filter optimization + 10 percent. Stage 1, 2, 3
+Deleted oldbloom.
+Added saving the progress file once per minute (file save.txt).
+Added XOR and Fuse Filters. Selected via -x (bloom|xor|fuse).
+XOR FUSE filter optimization + 10 percent. Stage 1, 2, 3.
 Added checked-deep.txt check. If the traversed ranges from the -D deep.txt file are in the checked-deep.txt file, then it does not check them.
 Added cleaning of the tmp folder before and after creating the FUSE and XOR filter.
 
@@ -192,5 +192,6 @@ Correct values for n and maximum k for specific bits
 | 2 TB    | 50   | 131072     | 0x4000000000000 |
 
 -------------------------------------------------
+
 
 
