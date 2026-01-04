@@ -168,8 +168,10 @@ Bloom filters are generated automatically if they do not exist. They are saved i
 | `-n <val>`   | Set custom N value (Total points). Default 0x100000000000                         |
 | `-k <val>`   | Set factor K. I recommend using values from the table below                       |
 | `-d`         | Enable debug mode.                                                                |
-| `-x`         | Choose the bloom, xor, or fuse filter (I recommend fuse).                         |
+| `-x <val>`   | Choose the bloom, xor, or fuse filter (I recommend fuse).                         |
 |              | This requires a lot of RAM and creation time.                                     |
+| `-S`         | Saving the filter. Large S. I recommend using this always.                        |
+| `-s <n>`     | Output detailed information in seconds. Lowercase 's'. I recommend 1 and 30.      |
 
 Attention: You must recreate the filters, as the old ones are not compatible with this version.
 
@@ -202,6 +204,7 @@ Correct values for n and maximum k for specific bits
 | 2 TB    | 50   | 131072     | 0x4000000000000 |
 
 -------------------------------------------------
+
 
 
 
