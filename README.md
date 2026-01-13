@@ -22,6 +22,22 @@ KeyHunt is a high-performance tool for searching Bitcoin private keys using the 
 - **File Organization**: Bloom filters are now saved in a separate `filters/` folder with organized names.
 
 ## What's added:
+1.0.4
+What's added:
+Corrected the -wif (1 | 0) output for WIF output
+Fixed the skipping error
+Fixed the filter generation for Windows
+Accelerated bloom using 64-bit mix
+Accelerated bloom generation
+Accelerated AVX2 mathematics
+Vectorized Bloom, FUSE, XOR filter checking
+Prefetching for XOR Fuse (Filter acceleration)
+Huge Pages (Filter acceleration)
+Assembler for the double function
+Added a blocked filter -x blocked (speed is slow like Bloom, but the size is more compact, not recommended. Currently, FUSE is the best)
+FUSE acceleration by 25 cycles
+
+Attention: You must recreate the filters, as they are not compatible with the old version.
 
 1.0.3
 Deleted oldbloom.
@@ -39,7 +55,7 @@ Added cleaning of the tmp folder before and after creating the FUSE and XOR filt
 Attention: Be sure to recreate the filters, as they do not work from the old version.
 
 ## Usage
-![ket hunt](https://github.com/Slait/Keyhuntbsgs/blob/main/keyhunt2.png?raw=true)
+![ket hunt](https://github.com/Slait/Keyhuntbsgs/blob/main/keyhunt.gif?raw=true)
 ## Disclaimer
 I created this tool as a universal tool for solving puzzles. I recommend everyone to use it ONLY for solving puzzles.
 
@@ -206,6 +222,7 @@ Correct values for n and maximum k for specific bits
 |  GB     |  GB     | 2 TB    | 50   | 131072     | 0x4000000000000 |                  |                 |                   |                |               |                 |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
